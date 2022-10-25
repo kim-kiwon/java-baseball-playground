@@ -1,11 +1,13 @@
 package study;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class StringTest {
+
     @Test
     void replace() {
         String actual = "abc".replace("b", "d");
@@ -25,7 +27,7 @@ public class StringTest {
     @Test
     @DisplayName("String.substring 테스트 수행.")
     void substring() {
-        String value = "(1,2)".substring(1,4);
+        String value = "(1,2)".substring(1, 4);
         assertThat(value).isEqualTo("1,2");
     }
 
