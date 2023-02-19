@@ -5,6 +5,13 @@ public class Baseball {
     private InputReceiver inputReceiver;
     private StrikeCounter strikeCounter;
 
+    public Baseball(AnswerGenerator answerGenerator, InputReceiver inputReceiver,
+        StrikeCounter strikeCounter) {
+        this.answerGenerator = answerGenerator;
+        this.inputReceiver = inputReceiver;
+        this.strikeCounter = strikeCounter;
+    }
+
     public void start() {
         String answer = answerGenerator.createAnswer();
 
@@ -19,7 +26,12 @@ public class Baseball {
     }
 
     private void printStrikeCount(int strikeCount) {
-        if(strikeCount != 3) {
+        if(strikeCount == 0) {
+            System.out.println("낫싱");
+            return;
+        }
+
+        if(strikeCount < 3) {
             System.out.println(strikeCount + "스트라이크");
             return;
         }

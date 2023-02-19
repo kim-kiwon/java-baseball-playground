@@ -1,6 +1,11 @@
 package ch2;
 
 public class StrikeCounter {
+
+    public StrikeCounter() {
+    }
+
+
     public int compare(String answer, String input) {
         int count = 0;
 
