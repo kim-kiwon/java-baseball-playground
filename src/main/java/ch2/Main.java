@@ -3,7 +3,7 @@ package ch2;
 import java.util.Scanner;
 
 public class Main {
-    private static Baseball baseball = new Baseball(new AnswerGenerator(), new InputReceiver(new InputValidator()), new StrikeCounter());
+    private static Baseball baseball = new Baseball(new AnswerGenerator(), new InputReceiver(new InputValidator()), new AnswerMatcher(new Score()));
 
     public static void main(String[] args) {
         int gameButton = 1;
