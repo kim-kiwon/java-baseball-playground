@@ -1,10 +1,17 @@
 package ch3;
 
+import ch3.baseball.AnswerGenerator;
+import ch3.baseball.Baseball;
 import java.util.Scanner;
 
 public class Application {
+    private Baseball baseball;
+
     public static void main(String[] args) {
         String input = getUserInput();
+
+        Baseball baseball = new Baseball(new AnswerGenerator());
+        baseball.play(input);
     }
 
     private static String getUserInput() {
