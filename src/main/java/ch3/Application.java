@@ -1,5 +1,6 @@
 package ch3;
 
+import ch3.baseball.AnswerComparer;
 import ch3.baseball.AnswerGenerator;
 import ch3.baseball.Baseball;
 import ch3.baseball.InputValidator;
@@ -11,7 +12,7 @@ public class Application {
     public static void main(String[] args) {
         String inputStr = getUserInput();
 
-        Baseball baseball = new Baseball(new AnswerGenerator(), new InputValidator());
+        Baseball baseball = new Baseball(new AnswerGenerator(), new InputValidator(), new AnswerComparer());
         baseball.play(inputStr);
     }
 
