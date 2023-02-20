@@ -2,6 +2,7 @@ package ch2;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import ch2.baseball.AnswerGenerator;
 import org.junit.jupiter.api.Test;
 
 class AnswerGeneratorTest {

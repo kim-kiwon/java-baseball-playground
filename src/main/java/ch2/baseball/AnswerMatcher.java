@@ -1,4 +1,4 @@
-package ch2;
+package ch2.baseball;
 
 public class AnswerMatcher {
     private Score score;

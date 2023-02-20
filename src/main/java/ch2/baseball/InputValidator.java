@@ -1,4 +1,4 @@
-package ch2;
+package ch2.baseball;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

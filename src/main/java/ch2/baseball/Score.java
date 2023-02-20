@@ -1,4 +1,4 @@
-package ch2;
+package ch2.baseball;
 
 public class Score {
     private int ball = 0;
