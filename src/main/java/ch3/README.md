@@ -1,6 +1,6 @@
 
 ## 기능 목록
-- [ ] Application에서 사용자의 입력을 받는다
+- [x] Application에서 사용자의 입력을 받는다
 - [ ] 하나의 게임을 진행한다 List<enum> 반환 Baseball#play
 - [ ] 1부터 9까지의 서로 다른 임의의 수 3개를 생성한다. - AnswerGenerator#makeAnswer
 - [ ] 컴퓨터의 수(3자리)와 플레이어의 수(3자리)를 비교할 수 있다.(결과는 List<enum>으로 반환) - AnswerComparer#compare
