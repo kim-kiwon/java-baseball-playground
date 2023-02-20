@@ -19,7 +19,7 @@ public class InputValidator {
             throw new IllegalArgumentException("3개가 넘는 단어가 입력되었습니다.");
         }
 
-        if(!input.contains(0)) {
+        if(input.contains(0)) {
             throw new IllegalArgumentException("0은 포함할 수 없습니다.");
         }
     }
